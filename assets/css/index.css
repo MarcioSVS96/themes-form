@@ -1,3 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+/* Reset */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #7c3aed, #a855f7, #7c3aed);
+  /* Form */
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: #f8fafc;
+  padding: 30px 40px;
+  border-radius: 8px;
+  gap: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  animation: dark-to-light-background 0.3s ease-in-out;
+  /* Form Header */
+  /* Social Media */
+  /* Inputs */
+  /* Login Button */
+}
+main form #header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main form #header h1 {
+  font-size: 40px;
+  position: relative;
+}
+main form #header h1::before {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 3px;
+  background-color: #7c3aed;
+  bottom: 10px;
+  border-radius: 5px;
+}
+main form #header i {
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+}
+main form #social_media {
+  display: flex;
+  justify-content: space-around;
+}
+main form #social_media img {
+  width: 35px;
+}
+main form #social_media img:hover {
+  transform: scale(1.2);
+}
+main form #input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  /* Forgot password */
+}
+main form #input .input-box label {
+  font-size: 14px;
+  color: #797984;
+}
+main form #input .input-box label .input-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  border-bottom: 1px solid #7c3aed;
+  cursor: text;
+}
+main form #input .input-box label .input-field i {
+  font-size: 18px;
+  cursor: text;
+  color: #000;
+}
+main form #input .input-box label .input-field input {
+  border: none;
+  width: 260px;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 0px 5px;
+  color: #000;
+}
+main form #input .input-box label .input-field input:focus {
+  outline: none;
+}
+main form #input #forgot_password a {
+  text-decoration: none;
+  color: #797984;
+  font-size: 12px;
+}
+main form #input #forgot_password a:hover {
+  color: #7c3aed;
+}
+main form button {
+  border: none;
+  background: linear-gradient(90deg, #7c3aed, #a855f7, #7c3aed);
+  padding: 7px;
+  border-radius: 3px;
+  color: #f8fafc;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+main form button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes dark-to-light-background {
+  0% {
+    background-color: var(--color-dark-100);
+  }
+  100.0% {
+    background-color: var(--color-light-50);
+  }
+}
+@keyframes light-to-dark-background {
+  0% {
+    background-color: var(--color-light-50);
+  }
+  100.0% {
+    background-color: var(--color-dark-100);
+  }
+}
+/* Dark Mode */
+.dark#login_form {
+  color: #f8fafc;
+  background-color: #312d37;
+  animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.input-field input, i {
+  color: #f8fafc;
+}
 
 /*# sourceMappingURL=index.css.map */

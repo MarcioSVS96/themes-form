@@ -1,0 +1,12 @@
+@use 'variables';
+
+/* Dark Mode */
+.dark#login_form {
+    color: variables.$color-light-50;
+    background-color:variables.$color-dark-100;
+    animation: light-to-dark-background 0.3s ease-in-out;  
+}
+
+.input-field input, i {
+        color: variables.$color-light-50;
+    }
